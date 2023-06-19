@@ -16,12 +16,18 @@ namespace DataStructure
             //list.Add(2);
             //list.Add(3);
             //list.Display();
-            GenericStack<int> stack = new GenericStack<int>();
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Display();
-            stack.Pop();
+            //GenericStack<int> stack = new GenericStack<int>();
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Display();
+            //stack.Pop();
+            GenericQueue<int> queue = new GenericQueue<int>();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Display();
+            queue.Dequeue();
         }
 
 
