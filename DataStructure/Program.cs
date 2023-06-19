@@ -12,7 +12,7 @@ namespace DataStructure
         public static void Main(string[] args)
         {
             DSInbulitFunction data = new DSInbulitFunction();
-            data.Stack();
+            data.Queue();
         }
 
 

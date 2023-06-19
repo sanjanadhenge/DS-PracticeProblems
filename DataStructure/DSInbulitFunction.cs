@@ -44,5 +44,21 @@ namespace DataStructure
             }
 
         }
+        public void Queue()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            foreach(var item in queue)
+            {
+                Console.WriteLine(item);
+            }
+            queue.Dequeue();
+            foreach (var item in queue)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }
