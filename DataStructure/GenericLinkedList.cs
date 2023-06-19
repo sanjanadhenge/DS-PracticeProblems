@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    internal class GenericLinkedList<T>
+    internal class GenericLinkedList<T> where T : IComparable
     {
         internal Node<T> head;
         internal void Add(T data)
@@ -168,6 +168,37 @@ namespace DataStructure
             }
             Console.WriteLine("Size is " + count);
             return count;
+        }
+        public void Sort()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            int size = Size();
+            Node<T> current = this.head;
+            Node<T> index = null;
+            T temp ;
+            while (current != null)
+            {
+                index = current.next;
+                while (index != null)
+                {
+                    T a = current.data;
+                    T b = index.data;
+                    if (a.CompareTo(b)<0)
+                    {
+                        temp = a;
+                        a = b;
+                        b = temp;
+                    }
+                    current.data = a;
+                    index.data = b;
+                    index = index.next;
+                    current = current.next;
+                }
+
+            }
         }
 
     }

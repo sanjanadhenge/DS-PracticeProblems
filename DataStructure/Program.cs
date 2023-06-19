@@ -11,8 +11,15 @@ namespace DataStructure
 
         public static void Main(string[] args)
         {
-            DSInbulitFunction data = new DSInbulitFunction();
-            data.Queue();
+            //DSInbulitFunction data = new DSInbulitFunction();
+            //data.Queue();
+            GenericLinkedList<int> list = new GenericLinkedList<int>();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Display();
+            list.Sort();
+            list.Display();
         }
 
 
