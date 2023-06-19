@@ -26,5 +26,23 @@ namespace DataStructure
                 Console.WriteLine(item);
             }
         }
+        public void Stack()
+        {
+            Stack<int> stack = new Stack<int>();
+            stack.Push(10);
+            stack.Push(20);
+            stack.Push(30);
+            foreach(var item in stack)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Top element of the stack => "+stack.Peek());
+            stack.Pop();
+            foreach (var item in stack)
+            {
+                Console.WriteLine(item);
+            }
+
+        }
     }
 }
